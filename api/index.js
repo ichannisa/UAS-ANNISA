@@ -6,7 +6,7 @@ const model = require('./sdk/model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1776976042:AAHyR8gRC_hXZKG-RRI3iWFPV4pOWR_kJBE'
+const token = '1862055216:AAFPjsYqlSLksCqAtIrQf5z0fOgyl9X83CE'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -14,9 +14,7 @@ const bot = new TelegramBot(token, {polling: true});
 bot.onText(/\/start/, (msg) => { 
     bot.sendMessage(
         msg.chat.id,
-        `UAS JARINGAN SYARAF TIRUAN\n
-	 NAMA : Adythia Rizky Taufik \n
-	 NIM  : 41419120052 \n 
+        `HALLO ANNISA RAHMAH HIDAYAT 41419120074\n
          click /predict`
     );   
 });
@@ -26,7 +24,7 @@ state =0;
 bot.onText(/\/predict/, (msg) => { 
     bot.sendMessage(
         msg.chat.id,
-        `Masukan nilai X1|X2|X3 contohnya 52|20|102 \n`
+        `Masukan nilai X1|X2|X3 contohnya 9|9|9 \n`
     );   
 	state = 1;
 });
